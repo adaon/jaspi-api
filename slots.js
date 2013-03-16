@@ -21,6 +21,10 @@ jaspi.slots = {};
             exports.call(name, request, callback);
         },
         
+        on: function (name, handler) {
+            socket.on(name, handler);
+        },
+        
         // Realization =========================================================
         
     });
